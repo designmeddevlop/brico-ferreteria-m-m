@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Brico Ferreteria M.M</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- HEADER -->
+  <header>
+
+    <h1>Brico Ferreteria M.M</h1>
+
+    <nav>
+      <a href="#home">Home</a>
+
+      <label for="menu-toggle" class="menu-btn">
+        Productos
+      </label>
+
+      <a href="#contacto">Contacto</a>
+
+      <a href="cart.html" class="cart">
+        🛒 Cart (<span id="cart-count">0</span>)
+      </a>
+    </nav>
+
+  </header>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <label for="menu-toggle" class="close-btn">
+      ✖
+    </label>
+
+    <h2>Categorías</h2>
+
+    <div class="category">
+
+      <input type="checkbox" id="cat1">
+
+      <label for="cat1" class="category-title">
+        Electricidad ⬇
+      </label>
+
+      <div class="subcategory">
+        <a href="#">Cables</a>
+        <a href="#">Interruptores</a>
+        <a href="#">Bombillas</a>
+      </div>
+
+    </div>
+
+    <a href="#productos">Fontanería</a>
+    <a href="#productos">Herramientas</a>
+    <a href="#productos">Copias de llaves</a>
+
+  </div>
+
+  <label for="menu-toggle" class="overlay"></label>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <h2>Compra los mejores productos</h2>
+
+    <p>
+      Descubre ofertas increíbles todos los días
+    </p>
+
+    <div class="spans">
+      <span>Electricidad</span>
+      <span>Fontanería</span>
+      <span>Herramientas</span>
+      <span>Copias de Llaves</span>
+    </div>
+
+    <a href="https://wa.me/34624706614"
+       target="_blank"
+       class="btn">
+      Compra ahora
+    </a>
+
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="productos" id="productos">
+
+    <h2>Nuestros Productos</h2>
+
+    <div class="productos-container">
+
+      <!-- PRODUCT 1 -->
+      <div class="product">
+
+        <img src="image/calzado sigoridad.jpg"
+             alt="Botas Trabajo">
+
+        <h3>Botas Trabajo</h3>
+
+        <p>€18.85</p>
+
+        <div class="product-actions">
+
+          <button class="add-to-cart"
+                  data-name="Botas Trabajo"
+                  data-price="18.85"
+                  data-image="image/calzado sigoridad.jpg">
+
+            Añadir
+
+          </button>
+
+          <a href="product.html?id=boots"
+             class="btn">
+
+            Ver producto
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 2 -->
+      <div class="product">
+
+        <img src="image/Oranje-koffer-hoofdafbeeldi.jpg"
+             alt="Juego de herramientas">
+
+        <h3>
+          Juego de herramientas de 73 piezas
+        </h3>
+
+        <p>€59</p>
+
+        <div class="product-actions">
+
+          <button class="add-to-cart"
+                  data-name="Juego de herramientas"
+                  data-price="59"
+                  data-image="image/Oranje-koffer-hoofdafbeeldi.jpg">
+
+            Añadir
+
+          </button>
+
+          <a href="product.html?id=tools"
+             class="btn">
+
+            Ver producto
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 3 -->
+      <div class="product">
+
+        <img src="image/cerrojo-lince.jpg"
+             alt="Cerrojo">
+
+        <h3>CERROJO LINCE 7930 LATON</h3>
+
+        <p>€33.99</p>
+
+        <div class="product-actions">
+
+          <button class="add-to-cart"
+                  data-name="CERROJO LINCE 7930 LATON"
+                  data-price="33.99"
+                  data-image="image/cerrojo-lince.jpg">
+
+            Añadir
+
+          </button>
+
+          <a href="product.html?id=lock"
+             class="btn">
+
+            Ver producto
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 4 -->
+      <div class="product">
+
+        <img src="image/guantes.jpg"
+             alt="Guantes">
+
+        <h3>Guante sin costuras</h3>
+
+        <p>€2.51</p>
+
+        <div class="product-actions">
+
+          <button class="add-to-cart"
+                  data-name="Guante sin costuras"
+                  data-price="2.51"
+                  data-image="image/guantes.jpg">
+
+            Añadir
+
+          </button>
+
+          <a href="product.html?id=gloves"
+             class="btn">
+
+            Ver producto
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 5 -->
+      <div class="product">
+
+        <img src="image/chaleco-newton.jpg"
+             alt="Chaleco">
+
+        <h3>Chaleco fluorescente</h3>
+
+        <p>€9</p>
+
+        <div class="product-actions">
+
+          <button class="add-to-cart"
+                  data-name="Chaleco fluorescente"
+                  data-price="9"
+                  data-image="image/chaleco-newton.jpg">
+
+            Añadir
+
+          </button>
+
+          <a href="product.html?id=vest"
+             class="btn">
+
+            Ver producto
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 6 -->
+      <div class="product">
+
+        <img src="image/malita.jpg"
+             alt="Herramientas aire comprimido">
+
+        <h3>Herramientas aire comprimido</h3>
+
+        <p>€130</p>
+
+        <div class="product-actions">
+
+          <button class="add-to-cart"
+                  data-name="Herramientas aire comprimido"
+                  data-price="130"
+                  data-image="image/malita.jpg">
+
+            Añadir
+
+          </button>
+
+          <a href="product.html?id=airtools"
+             class="btn">
+
+            Ver producto
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contacto">
+
+    <h2>Contacto</h2>
+
+    <div class="contact-container">
+
+      <div class="contact-item">
+        <h3>📍 Ubicación</h3>
+        <p>Jaumi 1 Reus - Tarragona</p>
+      </div>
+
+      <div class="contact-item">
+        <h3>📞 Teléfono</h3>
+
+        <a href="tel:012345678">
+          012-345678
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <h3>💬 WhatsApp</h3>
+
+        <a href="https://wa.me/346XXXXXXXX"
+           target="_blank">
+
+          Enviar mensaje
+
+        </a>
+      </div>
+
+      <div class="contact-item">
+
+        <h3>🕒 Horario</h3>
+
+        <p>De lunes a sábado</p>
+
+        <p>
+          09:00 - 13:30 | 15:30 - 20:00
+        </p>
+
+      </div>
+
+      <div class="contact-item">
+
+        <h3>🌐 Redes sociales</h3>
+
+        <a href="#"
+           class="social-link">
+
+          <img src="icons/iconfinder-social-media-applications-3instagram-4102579_113804.png"
+               alt="Instagram">
+
+          <span>Instagram</span>
+
+        </a>
+
+        <a href="#"
+           class="social-link">
+
+          <img src="icons/social_media_logo_facbook_icon-icons.com_73736.png"
+               alt="Facebook">
+
+          <span>Facebook</span>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <h3>Brico Ferreteria M.M</h3>
+
+    <p>
+      Todo lo que necesitas en herramientas y bricolaje
+    </p>
+
+    <div class="footer-links">
+
+      <a href="#home">Home</a>
+
+      <a href="#productos">Productos</a>
+
+      <a href="#contacto">Contacto</a>
+
+    </div>
+
+    <p class="copy">
+      © 2026 - Todos los derechos reservados
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

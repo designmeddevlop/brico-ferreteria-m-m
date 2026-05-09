@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Producto | Brico Ferreteria M.M</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+    <h1>Brico Ferreteria M.M</h1>
+
+    <nav>
+
+      <a href="index.html">Home</a>
+
+      <a href="index.html#productos">
+        Productos
+      </a>
+
+      <a href="index.html#contacto">
+        Contacto
+      </a>
+
+      <a href="cart.html" class="cart">
+        🛒 Cart (<span id="cart-count">0</span>)
+      </a>
+
+    </nav>
+
+  </header>
+
+  <!-- BACK BUTTON -->
+  <a href="index.html" class="back-btn">
+    ← Volver
+  </a>
+
+  <!-- PRODUCT PAGE -->
+  <section class="product-page">
+
+    <div class="product-image">
+
+      <img src="image/calzado sigoridad.jpg"
+           alt="Producto">
+
+    </div>
+
+    <div class="product-info">
+
+      <h2>Botas Trabajo</h2>
+
+      <p class="price">
+        €18.85
+      </p>
+
+      <p class="description">
+        Botas de trabajo resistentes y cómodas
+        para construcción, almacén y trabajos
+        industriales.
+      </p>
+
+      <div class="product-actions">
+
+        <button class="add-to-cart"
+                data-name="Botas Trabajo"
+                data-price="18.85"
+                data-image="image/calzado sigoridad.jpg">
+
+          Añadir
+
+        </button>
+
+        <a href="checkout.html"
+           class="btn">
+
+          Comprar
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <section class="productos" id="productos">
+
+    <h2>Otros Productos</h2>
+
+    <div class="productos-container">
+
+      <!-- PRODUCT 1 -->
+      <div class="product">
+
+        <img src="image/Oranje-koffer-hoofdafbeeldi.jpg"
+             alt="Herramientas">
+
+        <h3>
+          Juego de herramientas
+        </h3>
+
+        <p>€59</p>
+
+        <div class="product-actions">
+
+          <button class="add-to-cart"
+                  data-name="Juego de herramientas"
+                  data-price="59"
+                  data-image="image/Oranje-koffer-hoofdafbeeldi.jpg">
+
+            Añadir
+
+          </button>
+
+          <a href="product.html?id=tools"
+             class="btn">
+
+            Ver producto
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 2 -->
+      <div class="product">
+
+        <img src="image/cerrojo-lince.jpg"
+             alt="Cerrojo">
+
+        <h3>CERROJO LINCE 7930</h3>
+
+        <p>€33.99</p>
+
+        <div class="product-actions">
+
+          <button class="add-to-cart"
+                  data-name="CERROJO LINCE 7930"
+                  data-price="33.99"
+                  data-image="image/cerrojo-lince.jpg">
+
+            Añadir
+
+          </button>
+
+          <a href="product.html?id=lock"
+             class="btn">
+
+            Ver producto
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 3 -->
+      <div class="product">
+
+        <img src="image/guantes.jpg"
+             alt="Guantes">
+
+        <h3>Guantes de trabajo</h3>
+
+        <p>€2.51</p>
+
+        <div class="product-actions">
+
+          <button class="add-to-cart"
+                  data-name="Guantes de trabajo"
+                  data-price="2.51"
+                  data-image="image/guantes.jpg">
+
+            Añadir
+
+          </button>
+
+          <a href="product.html?id=gloves"
+             class="btn">
+
+            Ver producto
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <h3>Brico Ferreteria M.M</h3>
+
+    <p>
+      Todo lo que necesitas en herramientas
+      y bricolaje
+    </p>
+
+    <div class="footer-links">
+
+      <a href="index.html">Home</a>
+
+      <a href="index.html#productos">
+        Productos
+      </a>
+
+      <a href="index.html#contacto">
+        Contacto
+      </a>
+
+    </div>
+
+    <p class="copy">
+      © 2026 - Todos los derechos reservados
+    </p>
+
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      const params =
+        new URLSearchParams(window.location.search);
+
+      const productId = params.get("id");
+
+      const products = {
+
+        boots: {
+          name: "Botas Trabajo",
+          price: 18.85,
+          image: "image/calzado sigoridad.jpg",
+          description:
+            "Botas resistentes para trabajos industriales y construcción."
+        },
+
+        tools: {
+          name: "Juego de herramientas",
+          price: 59,
+          image: "image/Oranje-koffer-hoofdafbeeldi.jpg",
+          description:
+            "Juego completo de herramientas de 73 piezas."
+        },
+
+        lock: {
+          name: "CERROJO LINCE 7930",
+          price: 33.99,
+          image: "image/cerrojo-lince.jpg",
+          description:
+            "Cerrojo de seguridad resistente y duradero."
+        },
+
+        gloves: {
+          name: "Guantes de trabajo",
+          price: 2.51,
+          image: "image/guantes.jpg",
+          description:
+            "Guantes cómodos y resistentes para protección laboral."
+        }
+
+      };
+
+      const product = products[productId];
+
+      if (product) {
+
+        document.querySelector(".product-image img").src =
+          product.image;
+
+        document.querySelector(".product-image img").alt =
+          product.name;
+
+        document.querySelector(".product-info h2").textContent =
+          product.name;
+
+        document.querySelector(".price").textContent =
+          "€" + product.price;
+
+        document.querySelector(".description").textContent =
+          product.description;
+
+        const addButton =
+          document.querySelector(".add-to-cart");
+
+        addButton.dataset.name = product.name;
+        addButton.dataset.price = product.price;
+        addButton.dataset.image = product.image;
+      }
+
+    });
+  </script>
+
+</body>
+
+</html>
